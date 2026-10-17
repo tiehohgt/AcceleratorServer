@@ -28,8 +28,10 @@ orientation = portrait
 android.permissions = INTERNET, ACCESS_WIFI_STATE, ACCESS_NETWORK_STATE, CHANGE_WIFI_STATE
 
 # Версия API
-android.api = 31
+android.api = 33
 android.minapi = 21
+android.sdk = 33
+android.ndk = 25b
 
 [buildozer]
 log_level = 2
