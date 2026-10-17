@@ -1,37 +1,26 @@
 [app]
 
-# Название приложения
 title = Accelerator Server
-
-# Имя пакета
 package.name = acceleratorserver
-
-# Домен пакета
 package.domain = org.accelerator
 
-# Исходный код
 source.dir = .
-
-# Расширения файлов для включения в проект
 source.include_exts = py,png,jpg,kv,atlas
 
-# Версия приложения (обязательный параметр, на который ругался сборщик)
 version = 1.0
 
-# Список зависимостей
 requirements = python3,kivy,socket,threading
 
-# Ориентация экрана
 orientation = portrait
 
-# Права доступа для Android
 android.permissions = INTERNET, ACCESS_WIFI_STATE, ACCESS_NETWORK_STATE, CHANGE_WIFI_STATE
 
-# Версия API
-android.api = 33
+# Фиксируем стабильные версии, чтобы сборщик не тянул проблемную 37-ю версию
+android.api = 31
 android.minapi = 21
-android.sdk = 33
+android.sdk = 31
 android.ndk = 25b
+android.build_tools_version = 31.0.0
 
 [buildozer]
 log_level = 2
